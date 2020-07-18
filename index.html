@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>GhostoftheForest</title>
+
+        <link href = "css/style.css" rel = "stylesheet" type = "text/css">
+
+        <script language="javascript" type="text/javascript" src="src/collapse.js"></script>
+	    <script src = "src/main.js" type = "text/javascript"></script>
+        <script src = "src/player.js" type = "text/javascript"></script>
+        <script src = "src/control.js" type = "text/javascript"></script>
+        <script src = "src/draw.js" type = "text/javascript"></script>
+        <script src = "src/background.js" type = "text/javascript"></script>
+        <script src = "src/wall.js" type = "text/javascript"></script>
+        <script src = "src/collide.js" type = "text/javascript"></script>
+        <script src = "src/map_1.js" type = "text/javascript"></script>
+        <script src = "src/monster.js" type = "text/javascript"></script>
+        <script src = "src/monster2.js" type = "text/javascript"></script>
+        <script src = "src/main_menu.js" type = "text/javascript"></script>
+        <script src = "src/door.js" type = "text/javascript"></script>
+        <script src = "src/map_2.js" type = "text/javascript"></script>
+        <script src = "src/map_3.js" type = "text/javascript"></script>
+        <script src = "src/map_4.js" type = "text/javascript"></script>
+        <script src = "src/key.js" type = "text/javascript"></script>
+        <script src = "src/cage.js" type = "text/javascript"></script>
+        <script src = "src/end.js" type = "text/javascript"></script>
+        <script src = "src/sound.js" type = "text/javascript"></script>
+        <script src = "src/story.js" type = "text/javascript"></script>
+
+
+
+  </head>
+  <body>
+
+  <div class='sitebar'>
+    <div class="sitelogo">
+
+        <a href="#"> <img src="img/ghost_title.png" alt="GhostTitle"> </a>
+      </div>
+
+      <div class='sitetitle'>
+          Ghost of the Forest
+      </div>
+
+
+  </div>
+
+    <div class="gamewrapper">
+      <canvas id="menue" width="640"  height="320">Unser Menue</canvas>
+    </div>
+
+	<script src = "src/main.js" type = "text/javascript"></script>
+
+
+<!-- to be filled with the content of the toolbar -->
+<div class='gametoolbar'>
+
+  <a href="javascript:void(0)" onclick="openPanel('manual');"><img border="0" alt="GhostIcon_Manual" src="img/ghost_icon_manual.png"></a>
+  <a href="javascript:void(0)" onclick="openPanel('settings');"><img border="0" alt="GhostIcon_Settings" src="img/ghost_icon_settings.png" ></a>
+  <a href=""><img border="0" alt="GhostIcon_Manual" src="img/ghost_icon_refresh.png"></a>
+
+</div>
+
+<div id='mytoolbarPanel' class='toolbarpanel' onload="checkthebox();" >
+
+  <a href="javascript:void(0)" class="closebtn" onclick="closePanel()">&times;</a>
+
+
+<!-- Sound on/off slider-->
+
+
+  <label class="switch" id="volumeswitch">
+  <input type="checkbox" id="soundbutton" onclick="mute();">
+  <span class="slider round"></span>
+  </label>
+  <p id="soundtext"></p>
+
+
+</div>
+
+<!-- to be filled with the game story / communication-->
+    <div class='storyblock' id="story" >
+
+
+
+    </div>
+
+
+
+
+  </body>
+
+  <footer>
+
+  </footer>
+
+
+</html>

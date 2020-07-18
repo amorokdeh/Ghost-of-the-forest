@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css?family=Creepster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+.sitebar {
+
+
+  width:100%;
+
+  padding-top:10px;
+  padding-bottom: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+
+
+}
+
+.sitelogo{
+
+margin:10px;
+
+display: flex;
+flex-wrap: wrap;
+justify-content: flex-start;
+}
+
+.sitelogo a img {
+
+
+  width:64px;
+  height:64px;
+
+  box-sizing: content-box;
+
+}
+/* mini animation until gif is ready */
+.sitelogo a img:hover{
+
+  padding-right:5px;
+
+}
+
+
+.sitetitle{
+
+
+  color:white;
+  font-family:'Creepster', cursive;
+  font-size: 70px;
+
+  display:flex;
+
+}
+
+.gametoolbar{
+
+/*made position absolute might be ok for our use case  , */
+  position: absolute;
+  top: 110px;
+  left:1300px;
+  width :100px;
+
+/* make buttons not selectable */
+-ms-user-select: None;
+-moz-user-select: None;
+-webkit-user-select: None;
+user-select: None;
+
+}
+
+.gametoolbar a{
+
+
+  color:grey;
+  text-decoration: none;
+  /* opacity: 50%;  does not work in every browser*/
+
+
+}
+
+.gametoolbar a img {
+
+  width: 64px;
+  height: 64px;
+  border-color: grey;
+  border-width: thin;
+  border-style: solid;
+  border-radius: 2px;
+
+}
+
+.gametoolbar a img:hover{
+
+ /*  opacity: 100% */
+
+ color:white;
+ border-color: white;
+
+}
+
+.gametoolbar a::after{
+
+  /* opacity: 100% */
+
+}
+
+
+.openbtn{
+
+  font-size: 20px;
+  cursor:pointer;
+  background:#111;
+  color:white;
+  padding:10px 15px;
+
+  border:none;
+
+}
+
+.toolbarpanel{
+
+  height:340px;
+
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:110px;
+  left:1300px;
+  color: white;
+  background-color:black;
+  overflow-x:hidden;
+  padding-top:25px;
+  transition:0.5s; /* transition effect to slide the panel */
+
+  border-radius:2px;
+/* border-style: solid;
+  border-radius: 2px;
+  border-color: white;
+  border-width: 2px;
+  change trough js */
+
+}
+
+.toolbarpanel .closebtn{
+
+  position: absolute;
+  top:0;
+  right: 25px;
+  font-size:35px;
+  margin-left: 50px;
+
+  color: white;
+
+}
+
+.toolbarpanel .closebtn a{
+
+  text-decoration: none;
+
+}
+
+.toolbarpanel p {
+
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 10px;
+
+  -ms-user-select: None;
+  -moz-user-select: None;
+  -webkit-user-select: None;
+  user-select: None;
+
+
+
+}
+
+/*+++++++++++++++++++++ SLIDER START+++++++++++++++++++++++++++++++++++ */
+
+
+/* The switch - the box around the slider */
+.switch {
+ position: relative;
+ display: inline-block;
+ width: 60px;
+ height: 34px;
+ margin-left: 20px;
+
+ margin-top: 20px;
+ visibility: hidden;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+ opacity: 0;
+ width: 0;
+ height: 0;
+}
+
+/* The slider */
+.slider {
+ position: absolute;
+ cursor: pointer;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ background-color: #ccc;
+ -webkit-transition: .4s;
+ transition: .4s;
+
+}
+
+.slider:before {
+ position: absolute;
+ content: "";
+ height: 26px;
+ width: 26px;
+ left: 4px;
+ bottom: 4px;
+ background-color: white;
+ -webkit-transition: .4s;
+ transition: .4s;
+}
+
+input:checked + .slider {
+ background-color: #b80404;
+}
+
+input:focus + .slider {
+ box-shadow: 0 0 1px #b80404;
+}
+
+input:checked + .slider:before {
+ -webkit-transform: translateX(26px);
+ -ms-transform: translateX(26px);
+ transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+ border-radius: 34px;
+}
+
+.slider.round:before {
+ border-radius: 50%;
+}
+
+
+/*###################### SLIDER END ############################### */
+
+
+
+/*##################### STORY ######################################*/
+.storyblock{
+
+  font-family: 'Montserrat', sans-serif;
+
+  color: white;
+
+  border-style: solid;
+  border-radius: 2px;
+  border-color: grey;
+  border-width: 2px;
+  width:620px;
+  padding:10px;
+
+  display: none;
+
+
+}
+/*######################STORYEND###############################*/
+
+body {
+
+    /*merge*/
+  margin:0;
+
+    /* web size */
+  height:100%;
+  width:100%;
+
+    /*position*/
+  align-content:center;
+
+    /*background */
+  background-color: black;
+  /*background-image: url("../img/bg_site.jpg"); */
+  background-repeat: no-repeat;
+ background-size: cover;
+
+
+
+    /*text color*/
+  color:white;
+
+    /*y center*/
+  display:grid;
+
+    /*x center*/
+  justify-content:center;
+}
+
+
+canvas {
+
+    /* old background color */
+  background-color:black;
+
+  border-color: grey;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: medium;
+
+  padding: 2px;
+
+}
