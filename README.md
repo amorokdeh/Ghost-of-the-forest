@@ -3,6 +3,8 @@
 ## 📖 Story
 The game’s narrative revolves around wicked spirits that inhabit a forest, aiming to dominate the world and kidnap people. However, not all spirits are malevolent; a friendly ghost helps liberate people from this tyranny and battles against the evil spirits.
 
+![Ghost of the Forest Gameplay Screenshot](src/img/background_level3.png)
+
 ## 🎮 Game Content
 - **Arena**: Set in a mystical forest.
 - **Character**: You control the friendly ghost.
